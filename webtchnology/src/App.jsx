@@ -11,11 +11,11 @@ import userImg3 from './assets/ranilaxmi.jpg'
 
 function App() {
   return (
-    <>
-     <UserCard image={userImg} cardClass="card1" />
-<UserCard image={userImg2} cardClass="card2" />
-<UserCard image={userImg3} cardClass="card3" />
-    </>
+   <div className="cards-container">
+    <UserCard name="Pragya Tiwari" description="Software Engineer" image={userImg} cardClass="card1"  style={{ borderRadius: '2px', border: '2px solid #ccc' }} />
+    <UserCard name="Maharana Pratap" description="Historical Figure" image={userImg2} cardClass="card2" />
+    <UserCard name="Rani Laxmi" description="Freedom Fighter" image={userImg3} cardClass="card3" />
+</div>
   )
 }
 

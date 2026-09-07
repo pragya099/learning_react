@@ -1,11 +1,11 @@
 import './userCard.css'
 
-const UserCard = ({ image, cardClass }) => {
+const UserCard = (props) => {
   return (
-    <div className={`user-card ${cardClass}`}>
-      <img src={image} alt="User" />
-      <h2>User Card</h2>
-      <p>This is a simple user card.</p>
+    <div className={`user-card ${props.cardClass}`}>
+      <img src={props.image} alt="User" style={props.style} />
+      <h2>{props.name}</h2>
+      <p>{props.description}</p>
     </div>
   )
 
