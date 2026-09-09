@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f2f2f2;
+}
+
+/* Small Card */
+.color-card {
+  width: 320px;
+  height: 220px;
+
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  transition: background-color 0.8s ease,
+              transform 0.3s ease;
+}
+
+.color-card:hover {
+  transform: translateY(-5px);
+}
+
+.color-card h2 {
+  color: #222;
+}
+
+/* Button */
+.color-button {
+  padding: 12px 24px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: white;
+  color: #333;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  transition: 0.3s ease;
+}
+
+.color-button:hover {
+  transform: scale(1.05);
+}
+
+.color-button:active {
+  transform: scale(0.95);
+}
